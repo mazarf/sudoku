@@ -1,6 +1,6 @@
 # mifarran; Farran, Mazar
 
-a.out: main.cpp cell.o puzzle.o
+sudsolve: main.cpp cell.o puzzle.o
 	g++ -Wall -g main.cpp cell.o puzzle.o
 
 cell.o: cell.cpp cell.h
