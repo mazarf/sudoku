@@ -1,7 +1,7 @@
 # mifarran; Farran, Mazar
 
 sudsolve: main.cpp cell.o puzzle.o
-	g++ -Wall -g main.cpp cell.o puzzle.o
+	g++ -Wall -g -o sudsolve main.cpp cell.o puzzle.o
 
 cell.o: cell.cpp cell.h
 	g++ -Wall -c cell.cpp
