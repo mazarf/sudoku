@@ -154,9 +154,9 @@ void printError(const char *expected, const char *saw)
 
 
 // overloaded to handle single chars
-void printError(const char *expected, const char saw)
+void printError(const char *expected, const char sw)
 {
-
+	unsigned char saw = sw;
     if(!isprint(saw)) // not a printable character
     {
 	char hexString[8];  // stores '\xHH', where HH is the ascii
