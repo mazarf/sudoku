@@ -112,7 +112,7 @@ void getInput(char* temp)
 	    }
 		else if(cin.peek() == -1) // early EOF
 			printError(NEW_LINE, END_OF_FILE);
-		else if(isValue(cin.peek()) && cin.peek() != '.')
+		else if(isValue(cin.peek()))
 			printError(NEW_LINE, VALUE);
 	    else // default
 	    {
@@ -127,7 +127,7 @@ void getInput(char* temp)
 	{
 	    if(cin.peek() == -1)
 			break; // we're done here
-	    else if(isValue(cin.peek()) && cin.peek() != '.')
+	    else if(isValue(cin.peek()))
 			printError(END_OF_FILE, VALUE); 
 	    else if(cin.peek() == '\n')
 			printError(END_OF_FILE, NEW_LINE);
