@@ -74,7 +74,7 @@ void getInput(char* temp)
 	if(count < 81) // still filling the sudoku
 	{ 
 
-	    if(cin.peek() >= '0' && cin.peek() <= '9') // digit
+	    if(cin.peek() >= '1' && cin.peek() <= '9') // digit
 	    {
 			// store number in place
 			temp[count] = cin.get();
@@ -179,10 +179,10 @@ void printError(const char *expected, const char sw)
 
 
 
-// tests if character is 0-9 or .
+// tests if character is 1-9 or .
 bool isValue(int c)
 {
-    if((c >= '0' && c <= '9') || (c == '.'))
+    if((c >= '1' && c <= '9') || (c == '.'))
 		return true;
 
     return false;
