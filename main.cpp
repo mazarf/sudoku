@@ -127,8 +127,8 @@ void getInput(char* temp)
 	{
 	    if(cin.peek() == -1)
 			break; // we're done here
-	    else if(isValue(cin.peek()))
-			printError(END_OF_FILE, VALUE); 
+	    //else if(isValue(cin.peek()))
+		//	printError(END_OF_FILE, VALUE); 
 	    else if(cin.peek() == '\n')
 			printError(END_OF_FILE, NEW_LINE);
 	    else
