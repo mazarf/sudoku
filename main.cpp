@@ -112,8 +112,8 @@ void getInput(char* temp)
 	    }
 		else if(cin.peek() == -1) // early EOF
 			printError(NEW_LINE, END_OF_FILE);
-		else if(isValue(cin.peek()))
-			printError(NEW_LINE, VALUE);
+		//else if(isValue(cin.peek()))
+		//	printError(NEW_LINE, VALUE);
 	    else // default
 	    {
 			char invalid = cin.get();
